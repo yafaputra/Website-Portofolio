@@ -2,12 +2,12 @@ import Image from "next/image";
 
 const certificates = [
   {
-    image: null,
+    image: "/Belajar-Fundamental-Front-End-Web-Development.png",
     title: "Belajar Fundamental Front-End Web Development",
     issuer: "Dicoding Indonesia",
     description:
       "Sertifikasi pengembangan Front-End modern menggunakan HTML, CSS, JavaScript, DOM, dan Web API.",
-    href: "#",
+    href: "https://www.dicoding.com/certificates/JLX1VL3W5Z72",
   },
   {
     image: "/Belajar-Back-End-Pemula-dengan-JavaScript.png",
@@ -99,7 +99,6 @@ export default function Certificates() {
       className="relative overflow-hidden bg-[#15201C]"
       style={{ fontFamily: "'Inter', sans-serif" }}
     >
-      {/* same quiet drafting grid used across sections */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-[0.35]"
@@ -123,7 +122,7 @@ export default function Certificates() {
           Certificates
         </h2>
         <p className="mt-3 max-w-xl text-sm leading-relaxed text-[#B7B4A8] md:text-base">
-Berbagai sertifikat yang saya peroleh melalui proses belajar untuk meningkatkan pengetahuan dan keterampilan dalam pengembangan aplikasi web.
+          Berbagai sertifikat yang saya peroleh melalui proses belajar untuk meningkatkan pengetahuan dan keterampilan dalam pengembangan aplikasi web.
         </p>
 
         <div className="mt-16 grid gap-x-10 gap-y-12 md:grid-cols-2">

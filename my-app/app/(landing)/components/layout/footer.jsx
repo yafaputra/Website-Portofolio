@@ -1,8 +1,8 @@
 const Footer = () => {
   const links = [
-    { label: "GitHub", href: "https://github.com" },
-    { label: "LinkedIn", href: "https://linkedin.com" },
-    { label: "Instagram", href: "https://instagram.com" },
+    { label: "GitHub", href: "https://github.com/yafaputra" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/yafa-nanda-putra-60739a28b/" },
+    { label: "Instagram", href: "https://instagram.com/yafaputra" },
   ];
 
   return (

@@ -36,10 +36,10 @@ const RegistrationMark = ({ className = "" }) => (
 
 export default function Hero() {
   const socials = [
-    { icon: IconGithub, href: "https://github.com", label: "GitHub" },
+    { icon: IconGithub, href: "https://github.com/yafaputra", label: "GitHub" },
     { icon: IconInstagram, href: "https://instagram.com", label: "Instagram" },
-    { icon: IconLinkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: IconMail, href: "mailto:hello@example.com", label: "Email" },
+    { icon: IconLinkedin, href: "https://www.linkedin.com/in/yafa-nanda-putra-60739a28b/", label: "LinkedIn" },
+    { icon: IconMail, href: "mailto:yafaputra94@gmail.com", label: "Email" },
   ];
 
   return (

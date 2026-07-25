@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   SiReact,
   SiNextdotjs,
@@ -11,6 +12,19 @@ import {
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
+/**
+ * About — bio, education, and skills section.
+ *
+ * Dark mode modern palette: deep olive background, warm cream text, teal
+ * accent. Same structure as before (drafting grid, corner ticks on the
+ * portrait, JetBrains Mono for labels/dates, Space Grotesk for display
+ * type) just recolored to match Hero/Header.
+ *
+ * Skills now use real brand marks from react-icons/si (Simple Icons)
+ * instead of generic lucide glyphs, so each tile is instantly
+ * recognizable (React, Next.js, Tailwind, Express, Laravel, MySQL,
+ * MongoDB, VS Code, XAMPP, GitHub).
+ */
 
 const education = [
   {
@@ -20,7 +34,7 @@ const education = [
     location: "Sleman, Yogyakarta",
   },
   {
-    school: "Smk Muhammadiyah Imogiri",
+    school: "SMK Muhammadiyah Imogiri",
     program: "Teknik Komputer dan Jaringan",
     period: "2020 — 2023",
     location: "Bantul, Yogyakarta",
@@ -67,10 +81,10 @@ export default function About() {
           className="mt-2 text-3xl font-semibold text-[#F5F3EC] md:text-4xl"
           style={{ fontFamily: "'Space Grotesk', sans-serif" }}
         >
-           Tentang Saya
+          About Me
         </h2>
         <p className="mt-3 max-w-xl text-sm leading-relaxed text-[#B7B4A8] md:text-base">
-          Mengenal lebih dekat tentang latar belakang, pendidikan, keterampilan, serta pengalaman saya dalam mengembangkan aplikasi web melalui proyek akademik dan bootcamp.        
+          Mengenal lebih dekat tentang latar belakang, pendidikan, keterampilan, serta pengalaman saya dalam mengembangkan aplikasi web melalui proyek akademik dan bootcamp.
         </p>
 
         <div className="mt-16 grid gap-16 md:grid-cols-2 md:gap-12">
@@ -84,7 +98,16 @@ export default function About() {
                 aria-hidden="true"
                 className="absolute -bottom-2 -right-2 h-4 w-4 border-b border-r border-[#5DCAA5]"
               />
-              <div className="aspect-[4/5] w-full border border-[#2A362F] bg-[#1A2620]" />
+              <div className="relative aspect-[4/5] w-full overflow-hidden border border-[#2A362F] bg-[#1A2620]">
+                <Image
+                  src="/Yafa-Putra.jpg"
+                  alt="Yafa Nanda Putra"
+                  fill
+                  sizes="(min-width: 768px) 384px, 100vw"
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </div>
 
             <h3
@@ -112,7 +135,7 @@ export default function About() {
               className="text-lg font-semibold text-[#F5F3EC]"
               style={{ fontFamily: "'Space Grotesk', sans-serif" }}
             >
-              Pendidikan
+              Education
             </h3>
 
             <div className="mt-5 space-y-6">
@@ -144,7 +167,7 @@ export default function About() {
               className="mt-12 text-lg font-semibold text-[#F5F3EC]"
               style={{ fontFamily: "'Space Grotesk', sans-serif" }}
             >
-              Keterampilan
+              Skills
             </h3>
 
             <div className="mt-5 flex flex-wrap gap-3">

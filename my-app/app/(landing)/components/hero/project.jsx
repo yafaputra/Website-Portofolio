@@ -1,8 +1,13 @@
 import Image from "next/image";
-
+import sistemMagangImg from "../../../../public/Sistem-Magang-Website.png";
+import sportOnImg from "../../../../public/Sport-On-Website.png";
+import UmkmImg from "../../../../public/Website-Toko-Umkm.png";
+import courseOnlineImg from "../../../../public/Course.png";
+import ecommerceUiUxImg from "../../../../public/Mobile-Ecomerce-app.png";
+import paymentCampusUiUxImg from "../../../../public/Payment-Campus-UI-UX.png";
 const projects = [
   {
-    image: "/Sistem-Magang-Website.png",
+    image: sistemMagangImg,
     title: "Sistem Informasi Pemagangan Mahasiswa",
     description:
       "Aplikasi web untuk mengelola pendaftaran, persetujuan, monitoring, dan pelaporan kegiatan magang mahasiswa.",
@@ -10,7 +15,7 @@ const projects = [
     href: "#",
   },
   {
-    image: "/Sport-On-Website.png",
+    image: sportOnImg,
     title: "SportOn Web",
     description:
       "Aplikasi e-commerce perlengkapan olahraga dengan fitur katalog produk, keranjang belanja, dan checkout.",
@@ -18,31 +23,31 @@ const projects = [
     href: "https://sport-on-web-jeqo.vercel.app/",
   },
   {
-    image: null,
+    image: UmkmImg,
     title: "Website Toko UMKM",
     description:
       "Website katalog produk UMKM untuk memudahkan promosi, pengelolaan produk, dan proses pemesanan secara online.",
     tags: ["Next.js", "Tailwind CSS", "MongoDB", "Express.js"],
-    href: "#",
+    href: "https://github.com/AgunaCourse/toko-bu-har.git",
   },
   {
-    image: "/Course-Online.png",
+    image: courseOnlineImg,
     title: "Website Course Online",
     description:
       "Platform pembelajaran online dengan fitur autentikasi, manajemen course, dan pengelolaan materi pembelajaran.",
     tags: ["Vue.js", "Tailwind CSS", "MySQL", "Laravel"],
-    href: "#",
+    href: "https://github.com/yafaputra/itqom-education.git",
   },
   {
-    image: "/Ecommerce-UI-UX.png",
+    image: ecommerceUiUxImg,
     title: "UI/UX Design - Mobile E-Commerce",
     description:
       "Perancangan antarmuka aplikasi e-commerce mobile dengan fokus pada pengalaman pengguna yang sederhana dan intuitif.",
     tags: ["Figma"],
-    href: "#",
+    href: "https://www.figma.com/design/5DTC0crNLEkoaW7daW0nQz/UTS---UAS-IMK?node-id=0-1&t=LyO5glGWmu7btcSq-1",
   },
   {
-    image: "/Payment-Campus-UI-UX.png",
+    image: paymentCampusUiUxImg,
     title: "UI/UX Design - Aplikasi Pembayaran Kampus",
     description:
       "Perancangan antarmuka aplikasi pembayaran UKT dan administrasi kampus yang mudah digunakan dan efisien.",
@@ -55,18 +60,42 @@ function ProjectCard({ project }) {
   return (
     <div className="group flex flex-col">
       <div
-        className="relative aspect-[4/3] w-full overflow-hidden border border-[#2A362F] bg-[#1A2620] transition-colors duration-200 group-hover:border-[#5DCAA5]"
+        className="overflow-hidden border border-[#2A362F] transition-colors duration-200 group-hover:border-[#5DCAA5]"
         style={{ borderRadius: "8px 8px 40px 8px" }}
       >
+        {/* fake browser chrome — frames the screenshot so it reads as a deliberate preview, not a random crop */}
+        <div className="flex items-center gap-1.5 border-b border-[#2A362F] bg-[#0C1310] px-3 py-2.5 transition-colors duration-200 group-hover:border-[#5DCAA5]">
+          <span className="h-2 w-2 rounded-full bg-[#E5645A]" />
+          <span className="h-2 w-2 rounded-full bg-[#E5B84B]" />
+          <span className="h-2 w-2 rounded-full bg-[#5DCAA5]" />
+          {project.href && project.href !== "#" ? (
+            <span
+              className="ml-2 truncate text-[10px] text-[#5A6B62]"
+              style={{ fontFamily: "'JetBrains Mono', monospace" }}
+            >
+              {project.href.replace(/^https?:\/\//, "")}
+            </span>
+          ) : null}
+        </div>
+
         {project.image ? (
+          // Statically imported image: Next.js knows its real width/height,
+          // so it renders at its natural aspect ratio — full width, height
+          // auto. No cropping, no leftover background gaps.
           <Image
             src={project.image}
             alt={project.title}
-            fill
-            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-            className="object-cover object-top transition-transform duration-300 group-hover:scale-[1.03]"
+            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw height: 100px"
+            className="block h-100px w-full"
           />
-        ) : null}
+        ) : (
+          <div
+            className="flex aspect-[16/10] w-full items-center justify-center bg-[#0C1310] text-[11px] uppercase tracking-[0.15em] text-[#3E4A43]"
+            style={{ fontFamily: "'JetBrains Mono', monospace" }}
+          >
+            Preview soon
+          </div>
+        )}
       </div>
 
       <h3
