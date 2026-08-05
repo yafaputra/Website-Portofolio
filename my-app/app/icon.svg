@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="16" fill="#070c0a" stroke="#2dd4bf" stroke-width="1.5"/>
+  <!-- stylized letter Y in the center -->
+  <path d="M10 9 L16 17 L22 9" fill="none" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M16 17 L16 23" fill="none" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- technical dots -->
+  <circle cx="10" cy="9" r="1.5" fill="#f0f7f4"/>
+  <circle cx="22" cy="9" r="1.5" fill="#f0f7f4"/>
+  <circle cx="16" cy="23" r="1.5" fill="#f0f7f4"/>
+</svg>
