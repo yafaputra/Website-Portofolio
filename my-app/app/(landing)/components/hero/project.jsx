@@ -26,7 +26,7 @@ const projects = [
     description:
       "Aplikasi web untuk mengelola pendaftaran, persetujuan, monitoring, dan pelaporan kegiatan magang mahasiswa.",
     tags: ["Next.js", "Tailwind CSS", "MySQL", "Express.js"],
-    href: "#",
+    href: "https://github.com/yafaputra/Sistem-Magang.git",
     category: "website",
   },
   {
