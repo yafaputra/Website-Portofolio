@@ -22,21 +22,12 @@ const RegistrationMark = ({ className = "" }) => (
 
 const projects = [
   {
-    image: sportVenueImg,
-    title: "SportVenue - Web Booking Lapangan Olahraga & Sparring",
+    image: UmkmImg,
+    title: "Website Toko UMKM",
     description:
-      "Aplikasi penyewaan lapangan olahraga (futsal, badminton, basket) secara online lengkap dengan sistem booking, pilih waktu, manajemen status pemesanan, integrasi instruksi pembayaran bank/e-wallet, serta fitur cari sparring partner.",
-    tags: ["Laravel", "Tailwind CSS", "MySQL", "JavaScript", "Alpine.js"],
-    href: "https://github.com/yafaputra/SportVenue.git",
-    category: "website",
-  },
-  {
-    image: sistemMagangImg,
-    title: "Sistem Informasi Pemagangan Mahasiswa",
-    description:
-      "Aplikasi web untuk mengelola pendaftaran, persetujuan, monitoring, dan pelaporan kegiatan magang mahasiswa.",
-    tags: ["Next.js", "Tailwind CSS", "MySQL", "Express.js"],
-    href: "https://github.com/yafaputra/Sistem-Magang.git",
+      "Website katalog produk UMKM untuk memudahkan promosi, pengelolaan produk, dan proses pemesanan secara online.",
+    tags: ["Next.js", "Tailwind CSS", "MongoDB", "Express.js"],
+    href: "https://github.com/AgunaCourse/toko-bu-har.git",
     category: "website",
   },
   {
@@ -49,12 +40,21 @@ const projects = [
     category: "website",
   },
   {
-    image: UmkmImg,
-    title: "Website Toko UMKM",
+    image: sistemMagangImg,
+    title: "Sistem Informasi Pemagangan Mahasiswa",
     description:
-      "Website katalog produk UMKM untuk memudahkan promosi, pengelolaan produk, dan proses pemesanan secara online.",
-    tags: ["Next.js", "Tailwind CSS", "MongoDB", "Express.js"],
-    href: "https://github.com/AgunaCourse/toko-bu-har.git",
+      "Aplikasi web untuk mengelola pendaftaran, persetujuan, monitoring, dan pelaporan kegiatan magang mahasiswa.",
+    tags: ["Next.js", "Tailwind CSS", "MySQL", "Express.js"],
+    href: "https://github.com/yafaputra/Sistem-Magang.git",
+    category: "website",
+  },
+  {
+    image: sportVenueImg,
+    title: "SportVenue - Web Booking Lapangan Olahraga & Sparring",
+    description:
+      "Aplikasi penyewaan lapangan olahraga (futsal, badminton, basket) secara online lengkap dengan sistem booking, pilih waktu, manajemen status pemesanan, integrasi instruksi pembayaran bank/e-wallet, serta fitur cari sparring partner.",
+    tags: ["Laravel", "Tailwind CSS", "MySQL", "JavaScript", "Alpine.js"],
+    href: "https://github.com/yafaputra/SportVenue.git",
     category: "website",
   },
   {
