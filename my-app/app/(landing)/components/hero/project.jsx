@@ -7,6 +7,7 @@ import UmkmImg from "../../../../public/Website-Toko-Umkm.png";
 import courseOnlineImg from "../../../../public/Course.png";
 import ecommerceUiUxImg from "../../../../public/Mobile-Ecomerce-app.png";
 import paymentCampusUiUxImg from "../../../../public/Payment-Campus-UI-UX.png";
+import sportVenueImg from "../../../../public/Sport-Venue-Website.png";
 
 const RegistrationMark = ({ className = "" }) => (
   <svg
@@ -20,6 +21,15 @@ const RegistrationMark = ({ className = "" }) => (
 );
 
 const projects = [
+  {
+    image: sportVenueImg,
+    title: "SportVenue - Web Booking Lapangan Olahraga & Sparring",
+    description:
+      "Aplikasi penyewaan lapangan olahraga (futsal, badminton, basket) secara online lengkap dengan sistem booking, pilih waktu, manajemen status pemesanan, integrasi instruksi pembayaran bank/e-wallet, serta fitur cari sparring partner.",
+    tags: ["Laravel", "Tailwind CSS", "MySQL", "JavaScript", "Alpine.js"],
+    href: "https://github.com/yafaputra/SportVenue.git",
+    category: "website",
+  },
   {
     image: sistemMagangImg,
     title: "Sistem Informasi Pemagangan Mahasiswa",
